@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Kasir</string>
+    <string name="htd">Hamzah Tech Development</string>
+    <string name="username">Username</string>
+    <string name="masukkan_username">Masukkan Username</string>
+    <string name="password">Password</string>
+    <string name="masukkan_password">Masukkan Password</string>
+    <string name="masuk">Masuk</string>
+    <string name="failed_login">Username dan password tidak cocok</string>
+    <string name="nama_lengkap">Nama Lengkap</string>
+    <string name="masukkan_nama_lengkap">Masukkan Nama Lengkap</string>
+    <string name="email">Email</string>
+    <string name="masukkan_email">Masukkan Email</string>
+    <string name="username_email">Username / Email</string>
+    <string name="masukkan_username_email">Masukkan Username / Email</string>
+    <string name="login">Login</string>
+    <string name="token">Token</string>
+    <string name="masukkan_token">Masukkan Token</string>
+    <string name="mini_pos">Mini POS</string>
+    <string name="omset">omset</string>
+    <string name="dahboard">Dashboard</string>
+    <string name="kasir">Kasir</string>
+    <string name="makanan">Makanan</string>
+    <string name="minuman">Minuman</string>
+    <string name="cari_nama_produk">Cari nama produk</string>
+    <string name="penjualan">Penjualan</string>
+    <string name="pengaturan">Pengaturan</string>
+    <string name="semua">Semua</string>
+    <string name="cari_sesuatu">Cari sesuatu</string>
+    <string name="transaksi_terakhir">Transaksi Terakhir</string>
+    <string name="logout">Logout</string>
+    <string name="order">Order</string>
+</resources>

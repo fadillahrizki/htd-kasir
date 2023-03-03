@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/primary">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingHorizontal="24dp"
+                android:paddingVertical="24dp"
+                android:layout_marginBottom="50dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/dahboard"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:id="@+id/description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mini_pos"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/logout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/logout"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/shape_header"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:paddingHorizontal="24dp">
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="12dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:background="@color/primary"
+                    android:padding="24dp">
+
+                    <TextView
+                        android:text="@string/omset"
+                        android:textSize="14sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAllCaps="true"
+                        android:letterSpacing=".3"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"/>
+                    <TextView
+                        android:id="@+id/omset"
+                        android:text="Rp. 50,000,000"
+                        android:textColor="@color/third"
+                        android:textSize="24sp"
+                        android:textStyle="bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:alignmentMode="alignMargins"
+                android:columnCount="3">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/kasir"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="12dp"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginRight="0dp"
+                    app:cardCornerRadius="12dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:background="@color/primary"
+                        android:padding="16dp"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:src="@drawable/ic_kasir_secondary"
+                            android:contentDescription="@string/kasir"/>
+
+                        <TextView
+                            android:text="@string/kasir"
+                            android:textSize="12sp"
+                            android:textColor="@color/white"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                    </LinearLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/penjualan"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="12dp"
+                    app:cardCornerRadius="12dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:background="@color/primary"
+                        android:padding="16dp"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:src="@drawable/ic_penjualan_secondary"
+                            android:contentDescription="@string/penjualan"/>
+
+                        <TextView
+                            android:text="@string/penjualan"
+                            android:textSize="12sp"
+                            android:textColor="@color/white"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                    </LinearLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/pengaturan"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="12dp"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginRight="0dp"
+                    app:cardCornerRadius="12dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:background="@color/primary"
+                        android:padding="16dp"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:src="@drawable/ic_pengaturan_secondary"
+                            android:contentDescription="@string/pengaturan"/>
+
+                        <TextView
+                            android:text="@string/pengaturan"
+                            android:textSize="12sp"
+                            android:textColor="@color/white"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                    </LinearLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+            </GridLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:layout_marginTop="12dp">
+
+                <TextView
+                    android:text="@string/transaksi_terakhir"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_transaksi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    tools:itemCount="10"
+                    tools:listitem="@layout/penjualan_item" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>
